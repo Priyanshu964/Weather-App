@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 15px 20px;
+    gap: 20px;
+    flex-direction: column;
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.search{
+    background-color: white;
+    width: 60%;
+    display: flex;
+    padding: 10px;
+    border-radius:5px;
+    justify-content: space-between;
+    
+}
+.search input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    
+}
+.search button{
+    border-radius:5px;
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(43, 48, 188);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search button:active{
+    transform: translateY(5px);
+}
+#time{
+    font-size: 50px;
+}
+.date{
+    font-size: 30px;
+}
+.others{
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.737);
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.others .item{
+    display: flex;
+    justify-content: space-between;
+}
+.future_forcast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: black;
+    width: 100%;
+}
+.today{
+    display: flex;
+    padding: 20px;
+    align-items: center; 
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.526);
+}
+.day_temp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: center;
+    height: 290px;
+}
+.status{
+    font-size: 50px;
+}
+.icon img{
+    width: 50%;
+}
+.day_temp .city{
+    padding: 5px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+.day_temp .temp{
+    font-size: 50px;
+}
+@media screen and (max-width:600px) {
+    .icon{
+        width: 100px;
+        height: 100px;
+    }
+    .day_temp{
+        gap: 30px;
+    }
+    .day_temp .city{
+      font-size: 30px;
+      
+    }
+    .status{
+        font-size: 30px;
+    }
+}
